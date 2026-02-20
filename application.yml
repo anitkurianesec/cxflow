@@ -41,7 +41,6 @@ sonarqube:
 checkmarx:
   username: admin
   password: eSec@12345
-  client-secret: xxxxx
   base-url: http://10.118.7.156
   multi-tenant: true
   configuration: Default Configuration
@@ -88,3 +87,4 @@ csv:
       name: recommendation
     - header: Similarity ID
       name: similarity-id
+
