@@ -8,7 +8,6 @@ logging:
   file:
     name: cx-flow.log
 
-
 cx-flow:
   # Agreed upon shared API token
   token: xxxx
@@ -24,16 +23,16 @@ cx-flow:
     - Rally
     - ServiceNow
     - Sarif
-    -SonarQube
+    - SonarQube
   branches:
     - develop
     - master
     - security
   filter-severity:
     - High
-  filter-category:
-  filter-cwe:
-  filter-status:
+  filter-category: []
+  filter-cwe: []
+  filter-status: []
   mitre-url: https://cwe.mitre.org/data/definitions/%s.html
 
 sonarqube:
@@ -49,10 +48,8 @@ checkmarx:
   scan-preset: Checkmarx Default
   team: \CxServer
   url: ${checkmarx.base-url}/cxrestapi
-#WSDL Config
+  # WSDL Config
   portal-url: ${checkmarx.base-url}/cxwebinterface/Portal/CxWebService.asmx
-
-
 
 json:
   file-name-format: "[TEAM]-[PROJECT]-[TIME].json"
